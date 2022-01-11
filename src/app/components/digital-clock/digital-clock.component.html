@@ -1,0 +1,9 @@
+<h1>Digital Clock</h1>
+
+<div class="clock-container digital-clock">
+    <div *ngIf="digitalClockData" class="time">
+        <span>{{digitalClockData.hour | number:'2.0'}}</span>: 
+        <span>{{digitalClockData.minute | number:'2.0'}}</span>: 
+        <span>{{digitalClockData.second | number:'2.0'}}</span>
+    </div>
+</div>
